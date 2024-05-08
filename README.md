@@ -1,8 +1,10 @@
-# Melbourne Housing Market
+# Melbourne Housing Market Analysis
+
+<img src="https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/504e90ce-bddc-4c12-b425-89d13158a37a" width="600">
 
 ## Project Overview 📋
 
-In this project, we'll conduct an exploratory data analysis (EDA) of Melbourne's housing market dataset for the period (2016-2018) to practice Python skills and discover interesting findings or insights.
+In this project, we'll conduct exploratory data analysis (EDA) of Melbourne's housing market dataset from 2016 to 2018 to practice our Python skills. We'll provide the dataset and its information, along with some randomly interesting findings discovered during exploration. For more detailed insights, we recommend reviewing the script attached in teh project, which contains additional details.
 
 ### Datasets 💾 
 [Melbourne housing market data (2016-2018)](https://raw.githubusercontent.com/dipalira/Melbourne-Housing-Data-Kaggle/master/Data/Melbourne_housing_FULL.csv)
@@ -32,7 +34,21 @@ Here's a breakdown of the columns in the Melbourne Housing DataFrame:
 * <span style="font-size: smaller;">**Regionname**: Name of the region where the property is located.</span>
 * <span style="font-size: smaller;">**Propertycount**: Number of properties in the area.</span>
 
-## Inisghts & Findings 🎯
+## Some Inisghts & Findings 🔍
+
+**Region Analysis:** To spot the cheapest and most expensive regions within Melbourne.
+
+![Screenshot 2024-05-08 at 17 00 37](https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/d003697d-69fe-42b9-bf9d-9a00b34fc32e)
+
+---
+
+Region's grouped in `Price_category` (ranges) visualization with **heatmap**:
+
+* We can see how `Southern Metropolitan` has the highest housing prices. 
+
+<img src="https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/eec0fc2a-1e35-4d16-8d83-46b9990a2f78" width="750">
+
+---
 
 Analysing the the **frequenecy of property types** (houses, units or townhouse)
 
@@ -40,21 +56,27 @@ Analysing the the **frequenecy of property types** (houses, units or townhouse)
 
 <img src="https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/fe7fd9c5-4645-41e4-bb54-02b689a9b890" width="500">
 
-**Region Analysis:** To spot the cheapest and most expensive regions within Melbourne.
-
-![Screenshot 2024-05-08 at 17 00 37](https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/d003697d-69fe-42b9-bf9d-9a00b34fc32e)
+---
 
 **Box plot** between `Price` and `Time`:
 
+* We can see a high number of `outliers` 
+
 ![image](https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/85d15afd-8606-4f1f-b895-a97aec5a30b3)
+
+---
 
 **Scatter Plot:** We can see low negative correlation betwee `Distance` to the city center and `Price`. 
 
 <img src="https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/d58bcd1f-179d-42e1-8cf5-6dd71547be67" width="600">
 
+---
+
 **Scatter Plot:** No correlation betwee `Landsize` and `Price`. 
 
 <img src="https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/481b03e6-707b-4a77-b76c-dc1dcdbdefaf" width="600">
+
+---
 
 Relation between number of `Rooms` and `Price` 
 
@@ -62,6 +84,7 @@ Relation between number of `Rooms` and `Price`
 
 ![Screenshot 2024-05-08 at 16 56 49](https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/bedc8cd4-bafc-4841-b68e-ae4e98528f17)
 
+---
 
 **QQ Plot**
 
@@ -73,6 +96,3 @@ Skewness and Kurtosis results:
 
 * Skewness of 2.59 suggests a right-skewed distribution, indicating fewer extreme high values.
 * Kurtosis of 13.10 indicates heavy-tailedness, implying more extreme values than a normal distribution. These findings highlight the presence of outliers in the dataset, which could impact analysis and modeling.
-
-**Contingency table** between Melbourne's `Region` and `Price_category`
-
