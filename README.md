@@ -1,6 +1,6 @@
 # Melbourne Housing Market Analysis
 
-<img src="https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/504e90ce-bddc-4c12-b425-89d13158a37a" width="600">
+<img src="https://github.com/davarques/Melbourne-Housing-Market/assets/160759223/504e90ce-bddc-4c12-b425-89d13158a37a" width="800">
 
 ## Project Overview 📋
 
